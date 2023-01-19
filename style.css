@@ -1,0 +1,148 @@
+* {
+  /* border: 1px solid black; */
+  box-sizing: border-box;
+}
+.topMenu {
+  background: #f5f5f6;
+  box-shadow: 3px 0 7px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+}
+.enterButton {
+  margin-right: 50px;
+  border-radius: 5px;
+  background-color: white;
+  width: 100px;
+}
+.bankLogo {
+  margin-left: 50px;
+}
+.mainSection {
+  padding: 0;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-around;
+  font-size: 24px;
+}
+.mainName {
+  text-align: center;
+  font-size: 60px;
+}
+.leftInput,
+.rightInput {
+  font-size: 36px;
+  font-weight: 600;
+  width: 300px;
+  margin-top: 30px;
+}
+.leftSection,
+.rightSection {
+  display: inline-block;
+  width: 45%;
+  min-height: 500px;
+  max-width: 500px;
+  text-align: center;
+   /* border: 1px solid black; */
+ 
+}
+.leftUl,
+.rightUl {
+  padding: 0;
+  display: inline-flex;
+}
+.leftUl li:first-child,
+.rightUl li:first-child {
+  color: red;
+}
+.leftUl li,
+.rightUl li {
+  display: inline-block;
+  width: 100px;
+  border: 0.5px solid silver;
+}
+.leftUl li:hover,
+.rightUl li:hover {
+  background-color: violet;
+}
+.leftUl li:active,
+.rightUl li:active {
+  background-color: blueviolet;
+}
+.inputCover {
+  width: 400px;
+  height: 200px;
+  border: 0.5px solid silver;
+  padding: 20px;
+  display: inline-block;
+  border-radius: 5px;
+}
+.leftSpan,
+.rightSpan {
+  font-size: 18px;
+  color: silver;
+  margin-top: 40px;
+}
+.menuMain {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: inline-start;
+}
+.menuMain li {
+  display: inline-block;
+}
+.menuMain a {
+  text-decoration: none;
+  display: block;
+  position: relative;
+  line-height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-family: "Arimo", sans-serif;
+  font-weight: bold;
+  color: #f73e24;
+  transition: 0.3s linear;
+}
+.menuMain a:hover {
+  background-color: bisque;
+  font-size: 14px;
+}
+@media (max-width: 800px) {
+  .menuMain {
+    float: none;
+    padding-top: 20px;
+  }
+  .inputCover {
+    width: auto;
+  }
+  .topMenu {
+    text-align: center;
+    padding: 10px 0 0 0;
+  }
+  .menuMain a {
+    padding: 0 10px;
+  }
+  .menuMain a:before {
+    transform: rotate(45deg) translateX(-6px);
+  }
+  .menuMain li {
+    display: block;
+  }
+  .leftUl,
+  .rightUl {
+    padding: 0;
+    display: inline-block;
+  }
+  .leftSection,
+  .rightSection,
+  .mainSection {
+    display: block;
+    width: 100%;
+  }
+}

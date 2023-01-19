@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Конвертер валют</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <header class="topMenu">
+      <img class="bankLogo" src="./images/bank_logo.svg" alt="logo">
+      <ul class="menuMain">
+        <li><a href="#">БАНК</a></li>
+        <li><a href="#">БИЗНЕС</a></li>
+        <li><a href="#">ИНВЕСТИЦИИ</a></li>
+        <li><a href="#">СТРАХОВАНИЕ</a></li>
+        <li><a href="#">МОБАЙЛ</a></li>
+        <li><a href="#">ПУТЕШЕСТВИЯ</a></li>
+        <li><a href="#">РАЗВЛЕЧЕНИЯ</a></li>
+      </ul>
+      <button class="enterButton">ВОЙТИ</button>
+    </header>
+
+    <h1 class="mainName">Конвертер валют онлайн</h1>
+
+    <main class="mainSection">
+      <section class="leftSection">
+        <h3>У меня есть</h3>
+        <ul class="leftUl">
+          <li class="leftLi">RUB</li>
+          <li class="leftLi">USD</li>
+          <li class="leftLi">EUR</li>
+          <li class="leftLi">GBP</li>
+            <!-- <select name="leftCur" id="">
+              <option value="GBP">GBP</option>
+              <option value="BTC">BTC</option>
+              <option value="AZN">AZN</option>
+            </select> -->
+          
+        </ul>
+        <div class="inputCover">
+          <input type="text" class="leftInput" value="1">
+          <p class="leftSpan">RUB</p>
+        </div>
+      </section>
+
+      <section class="rightSection">
+        <h3>Хочу приобрести</h3>
+        <ul class="rightUl">
+          <li class="rightLi">RUB</li>
+          <li class="rightLi">USD</li>
+          <li class="rightLi">EUR</li>
+          <li class="rightLi">GBP</li>
+          <li class="rightLi">AZN</li>
+        </ul>
+        <div class="inputCover">
+          <input type="text" class="rightInput" value="1">
+          <p class="rightSpan">RUB</p>
+        </div>
+      </section>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
